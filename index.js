@@ -15,7 +15,8 @@ inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 // use function writeToFile to write svg file to disk: params are fileName and answers
 function writeToFile(fileName, answers) {
     // initial content of svg file
-    svgFileStart = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"';
+    svgFileStart = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"/>`;
+    svgFileStart += `${answers.shape}`;
 
     let userShape;
     if (answers.shape === "circle") {
