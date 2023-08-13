@@ -20,15 +20,18 @@ function writeToFile(fileName, answers) {
     let userShape;
     if (answers.shape === "circle") {
         userShape = new Circle();
-        svgFileStart += `<circle cx="100" cy="100" r="100" fill="${answers.shapeColor}"/>`;
+        svgFileStart += `<circle cx="130" cy="115" r="80" fill="${answers.shapeColor}"/>`;
     } else if (answers.shape === "square") {
         userShape = new Square();
-        svgFileStart += `<rect x="70" y="40" width=160 height=160 fill="${answers.shapeColor}"/>`;
+        svgFileStart += `<rect x="50" y="50" width="160" height="160" fill="${answers.shapeColor}"/>`;
     } else {
         (answers.shape === "triangle")
         userShape = new Triangle();
         `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
     }
+
+    // close svg file
+    svgFileStart += "</svg>";
 
     fs.writeFile(fileName, svgFileStart, (err) => {
         err ? console.log(err) : console.log("generated logo.svg");
