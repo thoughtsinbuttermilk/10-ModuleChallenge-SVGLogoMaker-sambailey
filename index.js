@@ -21,6 +21,7 @@ function promptUser() {
         },
 
         // prompt: text color
+        // svg color keywords: https://upload.wikimedia.org/wikipedia/commons/2/2b/SVG_Recognized_color_keyword_names.svg
         {
             type: "list",
             name: "textColor",
