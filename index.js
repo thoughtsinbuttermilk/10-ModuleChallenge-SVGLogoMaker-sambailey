@@ -16,14 +16,14 @@ function writeToFile(fileName, answers) {
 
     let userShape;
     if (answers.shape === "circle") {
-        userShape = new circle();
+        userShape = new Circle();
         svgFileStart += `<circle cx="150" cy="150" r="150" fill="answers.shapeColor"/>`;
     } else if (answers.shape === "square") {
-        userShape = new square();
+        userShape = new Square();
         svgFileStart += `<rect x="70" y="40" width=160 height=160 fille="answers.shapeColor"/>`;
     } else {
         (answers.shape === "triangle")
-        userShape = new triangle();
+        userShape = new Triangle();
     }
 
     fs.writeFile(fileName, svgFileStart, (err) => {
@@ -70,7 +70,7 @@ function promptUser() {
             name: "shapeColor",
             message: "enter the color for the shape of your logo",
             choices: [
-                "slategrey", "black", "drakeslateblue"
+                "slategrey", "black", "darkslateblue"
             ],
         },
     ])
