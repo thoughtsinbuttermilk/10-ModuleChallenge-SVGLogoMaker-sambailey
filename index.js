@@ -27,7 +27,7 @@ function writeToFile(fileName, answers) {
     } else {
         (answers.shape === "triangle")
         userShape = new Triangle();
-        `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
+        svgFileStart += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
     }
 
     // close svg file
