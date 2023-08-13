@@ -77,6 +77,9 @@ function promptUser() {
             ],
         },
     ])
+    .then((answers) => {
+        writeToFile("logo.svg", answers);
+      });
 };
 
 // DONE: call promptUser function
