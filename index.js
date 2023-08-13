@@ -8,11 +8,11 @@ const fs = require("fs");
 
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 
-// TODO: prompt user for input
+// DONE: prompt user for input
 function promptUser() {
     inquirer.prompt([
 
-        // prompt for 3 characters for logo text
+        // prompt:  3 characters for logo text
         {
             type: "maxlength-input",
             name: "text",
@@ -20,7 +20,7 @@ function promptUser() {
             maxLength: 3
         },
 
-        // text color prompt
+        // prompt: text color
         {
             type: "list",
             name: "textColor",
@@ -30,7 +30,7 @@ function promptUser() {
             ],
         },
 
-        // shape choices
+        // prompt: shape choices
         {
             type: "list",
             name: "shape",
@@ -40,7 +40,7 @@ function promptUser() {
             ],
         },
 
-        // prompt for logo color
+        // prompt: logo color
         {
             type: "list",
             name: "shapeColor",
@@ -52,6 +52,6 @@ function promptUser() {
     ])
 }
 
-// TODO: call promptUser function
+// DONE: call promptUser function
 promptUser();
 
