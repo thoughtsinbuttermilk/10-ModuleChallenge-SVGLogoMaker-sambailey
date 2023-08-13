@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="160" stroke="#000" 
+    text-anchor="middle" font-size="24">
+    <defs>
+        <style type="text/css">
+        @import url('@import url('https://fonts.googleapis.com/css2?family=Agdasima+family=Roboto+display=swap');</style>
+    </defs>
+
+    <g stroke="none">
+        <text font-family="Roboto Condensed" x="225.5" y="43.42">
+            This is a Roboto Condensed font
+        </text>
+        <text font-family="Open Sans" x="225.5" y="88.42">
+            This is a Open Sans font
+        </text>
+        <text font-family="Anonymous Pro" x="225.5" y="133.42">
+            This is a Anonymous Pro font
+        </text>
+    </g>
+</svg>
