@@ -51,8 +51,20 @@ function promptUser() {
             ],
         },
     ])
-}
+
+    // TODO: write svg file to disk
+    // use function writeToFile to write svg file to disk: params are fileName and answers
+    function writeToFile(fileName) {
+        svgFileStart = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"'
+
+        fs.writeFile(fileName, svgFileStart, (err) => {
+            err ? console.log(err) : console.log("generated logo.svg");
+          });
+        }
+        writeToFile("logo.svg");
+    };
+
 
 // DONE: call promptUser function
-promptUser();
 
+promptUser();
