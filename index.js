@@ -6,6 +6,9 @@ const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
 // file system module: https://nodejs.org/dist/latest-v10.x/docs/api/fs.html#fs_file_system
 const fs = require("fs");
 
+// import shape classes
+const {Circle, Square, Triangle} = require("./lib/shapes.js");
+
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 
 // TODO: write svg file to disk
