@@ -15,19 +15,19 @@ inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 // use function writeToFile to write svg file to disk: params are fileName and answers
 function writeToFile(fileName, answers) {
     // initial content of svg file
-    svgFileStart = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"/>`;
-    svgFileStart += `${answers.shape}`;
-
+    svgFileStart = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">`;
+    
     let userShape;
     if (answers.shape === "circle") {
         userShape = new Circle();
-        svgFileStart += `<circle cx="150" cy="150" r="150" fill="answers.shapeColor"/>`;
+        svgFileStart += `<circle cx="100" cy="100" r="100" fill="${answers.shapeColor}"/>`;
     } else if (answers.shape === "square") {
         userShape = new Square();
-        svgFileStart += `<rect x="70" y="40" width=160 height=160 fille="answers.shapeColor"/>`;
+        svgFileStart += `<rect x="70" y="40" width=160 height=160 fill="${answers.shapeColor}"/>`;
     } else {
         (answers.shape === "triangle")
         userShape = new Triangle();
+        `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
     }
 
     fs.writeFile(fileName, svgFileStart, (err) => {
