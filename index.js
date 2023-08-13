@@ -55,15 +55,26 @@ function promptUser() {
     // TODO: write svg file to disk
     // use function writeToFile to write svg file to disk: params are fileName and answers
     function writeToFile(fileName) {
-        svgFileStart = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"'
+        // initial content of svg file
+        svgFileStart = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"';
 
+        let userShape;
+        if (answers.shape === "circle") {
+            userShape = new circle(); 
+            svgFileStart += `<circle cx="150" cy="150" r="150" fill="answers.shapeColor"/>`;
+        } else if (answers.shape === "square") {
+            userShape = new square(); 
+            svgFileStart += `<rect x="70" y="40" width=160 height=160 fille="answers.shapeColor"/>`;
+         } else {
+            (answers.shape === "triangle") 
+            userShape = new triangle();
+         }
+        
         fs.writeFile(fileName, svgFileStart, (err) => {
             err ? console.log(err) : console.log("generated logo.svg");
-          });
-        }
-        writeToFile("logo.svg");
-    };
-
+        });
+    }
+};
 
 // DONE: call promptUser function
 
