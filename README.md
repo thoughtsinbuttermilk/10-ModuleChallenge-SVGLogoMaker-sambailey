@@ -94,6 +94,8 @@ Sample images for each of the shapes supported by the application:
 
 ["smb" initials square](https://github.com/thoughtsinbuttermilk/10-ModuleChallenge-SVGLogoMaker-sambailey/blob/89564bbd47ea63b9fc4ba8a72292721d1f038b66/examples/sample%20logos/logo-smb.svg)
 
+NOTE: github strips the `<style>` tag from the `svg` when rendering; the font display is incorrect when viewed in the links on this page. To view the correct font, please preview the file using an SVG viewer plug-in for VS Code or open the file locally in a browser. 
+
 ## Credits
 
 I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Out teaching assistants, especially Jason Thekkekara (a.k.a JSON), Dustin, our student success manager, and the fine and thoughtful crew of graders for your support and patient approach as I learn. *Thank-you.*
