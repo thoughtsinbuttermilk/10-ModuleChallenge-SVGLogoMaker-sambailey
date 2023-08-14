@@ -86,6 +86,14 @@ A [screen capture]() of VS Code after the application has generated a `logo.svg`
 
 ## Sample images
 
+Sample images for each of the shapes supported by the application:
+
+[PGH circle: yellow on black, this was created in the walk through demo of the app running in the CLI](https://github.com/thoughtsinbuttermilk/10-ModuleChallenge-SVGLogoMaker-sambailey/blob/47678a4dcbe810b3c87eb16f3306e1f6b8af071c/examples/sample%20logos/logo-PGH.svg)
+
+["warning" logo: note the text is not centered in the triangle, this will be fixed in an update to the app](https://github.com/thoughtsinbuttermilk/10-ModuleChallenge-SVGLogoMaker-sambailey/blob/89564bbd47ea63b9fc4ba8a72292721d1f038b66/examples/sample%20logos/logo-warning.svg)
+
+["smb" initials square](https://github.com/thoughtsinbuttermilk/10-ModuleChallenge-SVGLogoMaker-sambailey/blob/89564bbd47ea63b9fc4ba8a72292721d1f038b66/examples/sample%20logos/logo-smb.svg)
+
 ## Credits
 
 I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Out teaching assistants, especially Jason Thekkekara (a.k.a JSON), Dustin, our student success manager, and the fine and thoughtful crew of graders for your support and patient approach as I learn. *Thank-you.*
