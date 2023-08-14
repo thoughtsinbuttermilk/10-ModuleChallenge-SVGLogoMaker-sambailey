@@ -74,7 +74,9 @@ The application is lightly guarded with `jest` unit tests. After cloning the rep
 
 ## Video walkthrough
 
-Please see [this video](./examples/videowalktrhoughs/runtheapplication.mov) which will  show you how the application is run in the terminal.
+Please see [this video](https://drive.google.com/file/d/1QFb5mc9S42LY-xphfu1fAy6aX29D4g-k/view?usp=sharing) which will  show you how the application is run in the terminal.
+
+Please see [this video](https://drive.google.com/file/d/1J5AXEQ3iRWJfFXKKlO6MYijpoWjyNK8_/view?usp=sharing) which will show you how to run the unit test suite for the application (passing against `main` branch).
 
 ## Screen captures
 
