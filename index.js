@@ -11,7 +11,7 @@ const {Circle, Square, Triangle} = require("./lib/shapes.js");
 
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 
-// TODO: write svg file to disk
+// DONE: write svg file to disk
 // use function writeToFile to write svg file to disk: params are fileName and answers
 function writeToFile(fileName, answers) {
     // initial content of svg file
@@ -53,6 +53,7 @@ function promptUser() {
     inquirer.prompt([
 
         // TODO: requirements specify user choice of color by svg color keywords or hexadecimal number
+        // focusing on figuring how to use jest to test; come back to this after you have a working test
 
         // prompt:  3 characters for logo text
         {
