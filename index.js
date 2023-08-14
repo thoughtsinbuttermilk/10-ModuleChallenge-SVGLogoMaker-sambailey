@@ -1,10 +1,17 @@
 // required modules
 // inquirer, cli interface for user input: https://www.npmjs.com/package/inquirer  
 const inquirer = require("inquirer");
-// extend built-in inquirer prompt: https://www.npmjs.com/package/inquirer-prompt  see: https://github.com/jwarby/inquirer-maxlength-input-prompt
+
+// extend built-in inquirer prompt see: https://www.npmjs.com/package/inquirer-prompt and https://github.com/jwarby/inquirer-maxlength-input-prompt
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
+
+// prompt style provides for list and arbitrary input see: https://www.npmjs.com/package/inquirer-prompt-style and https://github.com/mhkeller/inquirer-list-input
+// TODO: implement this when the assignments requirements are complete
+// inquirer.registerPrompt('list-input', require('inquirer-list-input'));
+
 // file system module: https://nodejs.org/dist/latest-v10.x/docs/api/fs.html#fs_file_system
 const fs = require("fs");
+
 
 // import shape classes
 const {Circle, Square, Triangle} = require("./lib/shapes.js");
@@ -69,12 +76,14 @@ function promptUser() {
         // prompt: text color
         // svg color keywords: https://upload.wikimedia.org/wikipedia/commons/2/2b/SVG_Recognized_color_keyword_names.svg
         {
-            type: "list",
+            // TODO: implement this when the assignments requirements are complete
+            type: "input",
+            // type: "list-input",
             name: "textColor",
             message: "enter the color of the text for your logo",
-            choices: [
-                "ivory", "white", "silver"
-            ],
+            // choices: [
+            //     "ivory", "white", "silver"
+            // ], 
         },
 
         // prompt: shape choices
@@ -89,12 +98,14 @@ function promptUser() {
 
         // prompt: logo color
         {
-            type: "list",
+            // TODO: implement this when the assignments requirements are complete
+            type: "input",
+            // type: "list-input",
             name: "shapeColor",
             message: "enter the color for the shape of your logo",
-            choices: [
-                "slategrey", "black", "darkslateblue"
-            ],
+            // choices: [
+            //     "slategrey", "black", "darkslateblue"
+            // ],
         },
     ])
     .then((answers) => {
