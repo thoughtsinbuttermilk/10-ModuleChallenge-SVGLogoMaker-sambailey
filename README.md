@@ -10,15 +10,17 @@ Northwestern Bootcamp challenge week 10
 ![node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
 # Table of Contents
-1. [DescrProject description](project%20description)
-2. [Application functionality](application%20functionality)
-3. [Technology used](technology%20used)
-4. [Usage instructions](usage%20instructions)
-5. [Testing](testing)
-6. [Video walkthrough, CLI](Video%20walkthrough,%20CLI)
-7. [Screen captures](screen%20captures)
-8. [Sample images](sample%20images)
-9. [Credits](credits)
+- [10 ModuleChallenge SVGLogoMaker sambailey](#10-modulechallenge-svglogomaker-sambailey)
+- [Table of Contents](#table-of-contents)
+  - [Project description](#project-description)
+  - [Application functionality](#application-functionality)
+  - [Technology used](#technology-used)
+  - [Usage instructions](#usage-instructions)
+  - [Testing](#testing)
+  - [Video walkthrough](#video-walkthrough)
+  - [Screen captures](#screen-captures)
+  - [Sample images](#sample-images)
+  - [Credits](#credits)
 
 ## Project description
 
@@ -71,6 +73,8 @@ Additionally, the generated `svg` logo includes an inline, embedded font (`robot
 The application is lightly guarded with `jest` unit tests. After cloning the repository and installing the dependencies, the tests can be run by typing `jest` in the root of the local repository. All tests are in a passing state when run against `main`.
 
 ## Video walkthrough
+
+Please see [this video](./examples/videowalktrhoughs/runtheapplication.mov) which will  show you how the application is run in the terminal.
 
 ## Screen captures
 
