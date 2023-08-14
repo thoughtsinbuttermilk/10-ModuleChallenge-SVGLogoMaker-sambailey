@@ -50,10 +50,13 @@ function writeToFile(fileName, answers) {
 
 // DONE: prompt user for input
 function promptUser() {
+
+    console.log("welcome to the logo generator!\ncreate your logo.svg file with three characters for the text for your logo.\nuse svg color keywords: https://upload.wikimedia.org/wikipedia/commons/2/2b/SVG_Recognized_color_keyword_names.svg\nor hexadecimal values for the color of the text and the shape of your logo. \n");
+
     inquirer.prompt([
 
         // TODO: requirements specify user choice of color by svg color keywords or hexadecimal number
-        // focusing on figuring how to use jest to test; come back to this after you have a working test
+        // DONE! YAY! tests 3 tests written and passing! focusing on figuring how to use jest to test; come back to this after you have a working test
 
         // prompt:  3 characters for logo text
         {
