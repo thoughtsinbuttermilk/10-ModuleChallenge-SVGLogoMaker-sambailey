@@ -80,6 +80,10 @@ Please see [this video](https://drive.google.com/file/d/1J5AXEQ3iRWJfFXKKlO6MYij
 
 ## Screen captures
 
+A [screen capture]() of the terminal after the application has generated a `logo.svg` file
+
+A [screen capture]() of VS Code after the application has generated a `logo.svg` file in the root of the repository
+
 ## Sample images
 
 ## Credits
