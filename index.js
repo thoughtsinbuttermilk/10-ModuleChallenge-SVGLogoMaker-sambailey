@@ -15,7 +15,12 @@ inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt)
 // use function writeToFile to write svg file to disk: params are fileName and answers
 function writeToFile(fileName, answers) {
     // initial content of svg file
-    svgFileStart = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">`;
+    // inline embedded of google fonts; github strips style tag when rendering, renders correctly in HTML or locally in browser
+    svgFileStart = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i");
+    </style>
+    `;
     
     let userShape;
     if (answers.shape === "circle") {
@@ -31,7 +36,8 @@ function writeToFile(fileName, answers) {
     }
 
     // close svg file
-    svgFileStart += "</svg>";
+    svgFileStart += `
+    </svg>`;
 
     fs.writeFile(fileName, svgFileStart, (err) => {
         err ? console.log(err) : console.log("generated logo.svg");
