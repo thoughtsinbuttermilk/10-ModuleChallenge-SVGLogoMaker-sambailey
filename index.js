@@ -32,9 +32,13 @@ function writeToFile(fileName, answers) {
     } else {
         (answers.shape === "triangle")
         userShape = new Triangle();
+        // TODO: modify triangle position to better center text alignment relative circle and square shapes
         svgFileStart += `<polygon points="150, 18 244, 182 56, 182" fill="${answers.shapeBackgroundColor}"/>`;
     }
 
+    // text content of svg file
+    svgFileStart += `<text x="95" y="135" font-family="Roboto Condensed, sans-serif" font-size="40" fill="${answers.textColor}">${answers.text}</text>
+    `
     // close svg file
     svgFileStart += `
     </svg>`;
@@ -47,6 +51,8 @@ function writeToFile(fileName, answers) {
 // DONE: prompt user for input
 function promptUser() {
     inquirer.prompt([
+
+        // TODO: requirements specify user choice of color by svg color keywords or hexadecimal number
 
         // prompt:  3 characters for logo text
         {
