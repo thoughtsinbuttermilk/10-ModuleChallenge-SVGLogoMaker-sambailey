@@ -98,4 +98,4 @@ NOTE: github strips the `<style>` tag from the `svg` when rendering; the font di
 
 ## Credits
 
-I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Out teaching assistants, especially Jason Thekkekara (a.k.a JSON), Dustin, our student success manager, and the fine and thoughtful crew of graders for your support and patient approach as I learn. *Thank-you.*
+I would like to thank my Northwestern Bootcamp instructor, [NikkiTheBugSlayer](https://github.com/NikkiTheBugSlayer) for her exceptional investments to ensure our cohort is able to understand and learn the concepts taught during this coursework. Our teaching assistants, especially Jason Thekkekara (a.k.a JSON), Dustin, our student success manager, and the fine and thoughtful crew of graders for your support and patient approach as I learn. *Thank-you.*
